@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">SANRIO CAFE</h1>
+        <p id="description" class="description text-center">
+          TELL US YOUR FAVORITE SANRIO CHARACTER FOR A  NEW SANRIO CAFE!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name"> Your Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which Sanrio character it's your favorite overall?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select favorite character</option>
+            <option value="hellokitty">Hello kitty</option>
+            <option value="pompompurin">Pompompurin</option>
+            <option value="kuromi">Kuromi</option>
+            <option value="cinnamonroll">Cinnamonroll</option>
+            <option value="mymelody">My Melody</option>
+            <option value="pochaco">Pochaco</option>
+             <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p> What's your favorite sanrio color palette?</p>
+          <label>
+            <input
+              name="user-favorite"
+              value="pastels"
+              type="radio"
+              class="input-radio"
+              checked
+            />Pastels</label
+          >
+          <label>
+            <input
+              name="user-favorite"
+              value="brightcolors"
+              type="radio"
+              class="input-radio"
+            />Bright Colors</label
+          >
+
+          <label
+            ><input
+              name="user-favorite"
+              value="dark-colors"
+              type="radio"
+              class="input-radio"
+            /> Dark colors</label
+          >
+        </div>
+
+        
+
+        <div class="form-group">
+          <p>
+            What would you like to see on our new cafe?
+            <span class="clue">(Check all the ideas you like)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="plushies"
+              type="checkbox"
+              class="input-checkbox"
+            />Plushies</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="sanrio-statues"
+              type="checkbox"
+              class="input-checkbox"
+            />Sanrio statues</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="themed-drinks"
+              type="checkbox"
+              class="input-checkbox"
+            />Themed-drinks</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="sanrio-wallpaper"
+              type="checkbox"
+              class="input-checkbox"
+            />Sanrio wallpaper</label
+          >
+          <label>
+         
+         
+       
+        </div>
+
+        <div class="form-group">
+          <p>Any more suggestions? let us know!</p>
+          <textarea
+            id="suggestion"
+            class="input-textarea"
+            name="suggestion"
+            placeholder="Enter your suggestions here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
